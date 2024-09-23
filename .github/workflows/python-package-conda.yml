@@ -39,4 +39,4 @@ jobs:
             echo "Conectando no EC2"
             echo "${{TESTE_AWS.AWS_KEY_SALAG}}" > private_key && chmod 600 private_key
             ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-18-215-82-44.compute-1.amazonaws.com "
-                  cd Curso do murilo aws\git\flask_python.py/;git pull;./executar.sh"
+                  cd testeaws/;git pull;./executar.sh"
